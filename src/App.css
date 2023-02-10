@@ -1,0 +1,207 @@
+
+body{
+  display: flex;
+  flex-direction: column; 
+}
+.content {
+  min-height: 80vh;
+  align-self: center;
+}
+.app {
+  background-color: rgb(223, 223, 223);
+  min-height: 100vh; 
+}
+.heading {
+  background-color: rgb(149, 149, 200);
+  color: white;
+  padding: 1%;
+  padding-left: 6%;
+  padding-right: 6%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 3px 2px 5px rgb(149, 149, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.create-note {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 40%; 
+  margin-bottom: 3%;
+}
+.note-container {
+  float: left;
+  width: 30%;
+  padding-left: 2%;
+}
+.note {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+.create-note input {
+  background-color: white;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-weight: 500;
+  margin-top: 2%;
+}
+.create-note textarea {
+  background-color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 1%;
+}
+.note textarea::placeholder , .note input::placeholder {
+  opacity: 0.6;
+}
+button {
+  background-color: rgb(149, 149, 200);
+  color: white;
+  border: none;
+  align-self: flex-end;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover {
+  background-color: white;
+  color: rgb(149, 149, 200);
+}
+
+.note h1 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 2%;
+    min-height: 1.5rem;
+}
+.note p {
+  font-size: 15px;
+  min-height: 4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  height: 2.5rem;
+  opacity: 0.4;
+  z-index: 1;
+}
+/* fix the footer */
+
+
+
+/* DarkMode Styles */
+
+
+.app.dark {
+  background-color: rgba(0, 0, 0, 0.721);
+}
+.heading.dark {
+  background-color: rgb(95, 94, 104);
+  color: whitesmoke;
+  box-shadow: 3px 2px 5px rgb(95, 94, 104);
+}
+.note.dark{
+  background-color: rgb(95, 94, 104);
+  color: white;
+}
+.create-note.dark{
+background-color: rgb(95, 94, 104);
+  color: white;
+}
+.create-note input.dark{
+  background-color: rgb(95, 94, 104);
+  color: whitesmoke;
+}
+.create-note input.dark::placeholder {
+  color: whitesmoke;
+}
+.create-note textarea.dark::placeholder {
+  color: whitesmoke;
+}
+.create-note textarea.dark{
+  background-color: rgb(95, 94, 104);
+  color: whitesmoke;
+}
+button.dark{
+  background-color: rgb(97, 91, 91);
+  color: white ;
+}
+.note h1.dark {
+  color: whitesmoke;
+}
+.note p.dark {
+  color: whitesmoke;
+}
+.footer.dark {
+  color: whitesmoke;
+}
+
+
+
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .note-container {
+    width: 40%;
+    padding-left: 6%;
+  }
+  .create-note {
+    width: 70%; 
+  }
+ 
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .note-container {
+    width: 85%;
+    padding-left: 6%;
+  }
+  .create-note {
+    width: 80%; 
+  }
+  .heading {
+    padding: 2.5% 7%;
+  
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
